@@ -17,6 +17,7 @@ The 2024 solar eclipse presents a unique opportunity for enthusiasts and researc
 - `requests_cache`: Caches API requests to optimize the number of calls made during development.
 - `pandas`: For data manipulation and analysis.
 - `matplotlib`: For creating visualizations of the weather data.
+- `geocoding` web service to handle coordinates data.
 - `reverse_geocode`: To find the nearest town or city for a given latitude and longitude.
 
 ## Installation
@@ -31,7 +32,7 @@ sudo apt update
 sudo apt install python3 python3-pip
 
 # Install the necessary Python packages
-pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode
+pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding
 ```
 
 Ensure that you have the latest versions of these packages to avoid any compatibility issues.
@@ -48,4 +49,3 @@ Contributions to this project are welcome! Whether it's feature enhancements, bu
 
 ## License
 
-This project is open-source and available under the MIT License. See the LICENSE file in the repository for more details.
