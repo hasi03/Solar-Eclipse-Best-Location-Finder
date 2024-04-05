@@ -2,17 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-# Choose a specific date
-import matplotlib.pyplot as plt
-
-# Choose specific years and days
-selected_years = np.arange(2020, 2024)
-selected_days = [9, 10]
 
 # Create an empty DataFrame to store the cloud coverage data
 
 
-def plot_cloud(all_data, image_dir, town, year_aray=selected_years):
+def plot_cloud(lat, long, all_data, image_dir, town, selected_years=np.arange(2020, 2024), selected_days=[9, 10]):
 
     cloud_coverage_data = pd.DataFrame(columns=['Year', 'Day', 'Hour', 'Cloud Cover'])
 
