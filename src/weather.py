@@ -1,5 +1,5 @@
 import openmeteo_requests
-
+import numpy as np
 import requests_cache
 import pandas as pd
 from retry_requests import retry
@@ -72,5 +72,18 @@ def weather_data(lat, long, start_date, end_date):
     all_data = pd.concat(data)
 
     return all_data
+
+
+# Function to get the maximum cloud cover for a given time interval. The time interval is a list of hours. It uses weighted average to calculate 
+#the maximum cloud cover where most recent years have more weight.
+def max_cloud(df, time_interval, year_start=2019):
+    
+    df['date'] = pd.to_datetime(df['date'], format='%Y:%m:%d:%H:%M')
+    filtered_df = df[(df['date'].dt.hour.isin(time_interval) & (df['date'].dt.year>=year_start))]
+    df2 = filtered_df.groupby(filtered_df['date'].dt.year).max()
+    weights = df2['date'].dt.year.values-2024
+    weighted_avg = np.average(df2['cloud_cover'], weights=1/weights)
+    return weighted_avg
+
 
 

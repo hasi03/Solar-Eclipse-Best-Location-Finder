@@ -21,7 +21,8 @@ def airport_locator(data_path, latitude, longitude, radius_miles=100):
             airports.append({
                 'name': row['name'],
                 'type': row['type'],
-                'coordinates': (float(row["latitude_deg"]), float(row['longitude_deg']))
+                'coordinates': (float(row["latitude_deg"]), float(row['longitude_deg'])),
+                'code': row['iata_code'] if row['iata_code'] else 'N/A' # Use 'N/A' if the airport does not have an IATA code
             })
     airports = [airport for airport in airports if 'large_airport' in airport['type'] or 'medium_airport' in airport['type']]
 
@@ -40,5 +41,5 @@ def airport_locator(data_path, latitude, longitude, radius_miles=100):
         print("No airports found within the specified radius")
         return None
     else:
-        df = pd.DataFrame(nearby_airports, columns=['name', 'distance', 'type'])
+        df = pd.DataFrame(nearby_airports, columns=['name', 'distance', 'type', 'code'])
         return df
