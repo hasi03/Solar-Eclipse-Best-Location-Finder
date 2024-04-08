@@ -26,13 +26,13 @@ The following metrics were used to evaluate the best location.
 
 This project is developed on Ubuntu, and the following instructions are tailored for Ubuntu users. To install the required packages, open your terminal and execute the following commands:
 
-# Install Python 3 and pip if they are not already installed
+### Install Python 3 and pip if they are not already installed
 sudo apt install python3 python3-pip
 
-# Install the necessary Python packages
+### Install the necessary Python packages
 pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding folium amadeus
 
-# Use Flight Price 
+# How to use Flight Prices 
 1. Register [amadeus](https://developers.amadeus.com/register) 
 2. Create API_info.env file in your directory where you cloned the github repository.
 3. Add the following lines to the .env file. 
