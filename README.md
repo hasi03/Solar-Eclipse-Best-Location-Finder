@@ -41,6 +41,7 @@ Ensure that you have the latest versions of these packages to avoid any compatib
 2. **Execution**: Run the notebook `weather.ipynb` to perform the analysis. Adjust parameters as needed to focus on specific locations or times.
 3. **Results**: Analyze the output for information on the best locations and nearest airports.
 
+```
 ## Results
 <figure>
   <img src="output/run_2024-04-08_09-49-58/locations.png" alt="Alt text" style="width:70%; height: 50%;">
