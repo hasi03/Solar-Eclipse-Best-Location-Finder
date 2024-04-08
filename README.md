@@ -53,7 +53,7 @@ Ensure that you have the latest versions of these packages to avoid any compatib
 ```
 ## Results
 
-These are the best location for the Solar Eclipse 2024. 
+The best location for the Solar Eclipse 2024. 
 <figure>
   <img src="output/run_2024-04-08_09-49-58/locations.png" alt="Alt text" style="width:70%; height: 50%;">
 </figure>
