@@ -32,7 +32,7 @@ sudo apt install python3 python3-pip
 ### Install the necessary Python packages
 pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding folium amadeus
 
-# How to use Flight Prices 
+## How to use Flight Prices 
 1. Register [amadeus](https://developers.amadeus.com/register) 
 2. Create API_info.env file in your directory where you cloned the github repository.
 3. Add the following lines to the .env file. 
