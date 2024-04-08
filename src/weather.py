@@ -19,13 +19,13 @@ url = "https://archive-api.open-meteo.com/v1/archive"
 # Make sure all required weather variables are listed here
 # The order of variables in hourly or daily is important to assign them correctly below
 
-def weather_data(lat, long, start_date, end_date):
+def weather_data(lat, long, start_date, end_date, month, day):
     import datetime
 
     data = []
     dates = pd.date_range(start=start_date, end=end_date, freq='D')
-    dates = dates[dates.month == 4]
-    dates = dates[dates.day == 9]
+    dates = dates[dates.month == month]
+    dates = dates[dates.day == day]
 
     for date in dates:
 

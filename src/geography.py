@@ -33,7 +33,7 @@ def airport_locator(data_path, latitude, longitude, radius_miles=100):
        
         
         if distance_miles <= radius_miles:
-            nearby_airports.append((airport['name'], distance_miles, airport['type']))
+            nearby_airports.append((airport['name'], distance_miles, airport['type'], airport['code'], airport['coordinates']))
 
     nearby_airports = sorted(nearby_airports, key=lambda x: (x[2], x[1])) # Sort by airport type and then by distance
 
@@ -41,5 +41,5 @@ def airport_locator(data_path, latitude, longitude, radius_miles=100):
         print("No airports found within the specified radius")
         return None
     else:
-        df = pd.DataFrame(nearby_airports, columns=['name', 'distance', 'type', 'code'])
+        df = pd.DataFrame(nearby_airports, columns=['name', 'distance', 'type', 'code', 'coordinates'])
         return df
