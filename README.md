@@ -31,7 +31,16 @@ sudo apt install python3 python3-pip
 
 # Install the necessary Python packages
 pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding folium amadeus
+
+# Use Flight Price 
+1. Register [amadeus](https://developers.amadeus.com/register) 
+2. Create API_info.env file in your directory where you cloned the github repository.
+3. Add the following lines to the .env file. 
+   API_key='YOUR KEY'
+   API_secret = 'YOUR SECRET KEY'
+  
 ```
+
 
 Ensure that you have the latest versions of these packages to avoid any compatibility issues.
 
@@ -46,6 +55,11 @@ Ensure that you have the latest versions of these packages to avoid any compatib
 <figure>
   <img src="output/run_2024-04-08_09-49-58/locations.png" alt="Alt text" style="width:70%; height: 50%;">
 </figure>
+
+<figure>
+  <img src="output/run_2024-04-08_09-49-58/cloud-cover-Powderly.png" alt="Alt text" style="width:70%; height: 50%;">
+</figure>
+
 
 ## Contribution
 
