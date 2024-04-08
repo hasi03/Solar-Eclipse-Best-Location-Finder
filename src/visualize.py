@@ -6,7 +6,7 @@ import pandas as pd
 # Create an empty DataFrame to store the cloud coverage data
 
 
-def plot_cloud(lat, long, all_data, image_dir, town, selected_years=np.arange(2020, 2024), selected_days=[9, 10]):
+def plot_cloud(lat, long, all_data, image_dir, town, selected_years=np.arange(2020, 2024), selected_days=[8,9]):
 
     cloud_coverage_data = pd.DataFrame(columns=['Year', 'Day', 'Hour', 'Cloud Cover'])
 
@@ -44,8 +44,8 @@ def plot_cloud(lat, long, all_data, image_dir, town, selected_years=np.arange(20
     x_values = grouped_data.get_group(2022)['Hour'].dt.strftime('%d:%Hh')
 
     # Set the start and end indices for the shaded area
-    start_index = x_values.tolist().index('09:12h')
-    end_index = x_values.tolist().index('09:16h')
+    start_index = x_values.tolist().index('0%s:12h'%selected_days[0])
+    end_index = x_values.tolist().index('0%s:16h'%selected_days[0])
 
     # Shade the area between the start and end indices
     plt.fill_between(x_values[start_index:end_index+1], 0, 100, alpha=0.3)
