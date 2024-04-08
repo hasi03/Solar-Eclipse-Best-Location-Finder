@@ -10,16 +10,17 @@ The following metrics were used to evaluate the best location.
 
 - **Weather Analysis**: Retrieves and analyzes weather data, focusing on cloud cover, to identify the best locations for eclipse viewing.
 - **Airport Finder**: Identifies the closest airports to the optimal viewing locations, aiding in logistical planning.
-- **Historical Data**: Utilizes historical weather data to predict conditions likely to be experienced during the eclipse.
+- **Flight Price**: Utilizes historical weather data to predict conditions likely to be experienced during the eclipse.
 
 ## Packages Used
 
 - `openmeteo_requests`: For retrieving weather data.
 - `requests_cache`: Caches API requests to optimize the number of calls made during development.
 - `pandas`: For data manipulation and analysis.
-- `matplotlib`: For creating visualizations of the weather data.
+- `folium`: For visualizating locations on a map.
 - `geocoding` web service to handle coordinates data.
 - `reverse_geocode`: To find the nearest town or city for a given latitude and longitude.
+- ` amadeus`: Python library to get flight prices api. 
 
 ## Installation
 
@@ -29,7 +30,7 @@ This project is developed on Ubuntu, and the following instructions are tailored
 sudo apt install python3 python3-pip
 
 # Install the necessary Python packages
-pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding
+pip3 install openmeteo-requests requests-cache pandas matplotlib reverse_geocode geocoding folium amadeus
 ```
 
 Ensure that you have the latest versions of these packages to avoid any compatibility issues.
