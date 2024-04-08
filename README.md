@@ -1,11 +1,12 @@
 
-# Solar Eclipse 2024 Best Viewing Locations Finder
+# Solar Eclipse Best Viewing Locations Finder
 
 ## Motivation
 
-The 2024 solar eclipse presents a unique opportunity for enthusiasts and researchers alike to witness one of nature's most awe-inspiring events. However, the visibility of the eclipse can be significantly affected by local weather conditions, particularly cloud cover. This project aims to use historical weather data to analyze cloud cover and other relevant weather conditions to identify the best viewing locations along the path of totality. Additionally, the project helps users find the closest airports to these ideal viewing locations, facilitating travel planning for eclipse chasers.
+The 2024 solar eclipse presents a unique opportunity for enthusiasts and researchers alike to witness one of nature's most awe-inspiring events. However, the visibility of the eclipse can be significantly affected by local weather conditions, particularly cloud cover. This project aims to use historical weather data to analyze cloud cover and other relevant weather conditions to identify the best viewing locations along the path of totality. Additionally, the project helps users find the closest airports to these ideal viewing locations, facilitating travel planning for eclipse chasers. This program can be used for other solar eclipses in the future.
 
-## Features
+## Metrics
+The following metrics were used to evaluate the best location.
 
 - **Weather Analysis**: Retrieves and analyzes weather data, focusing on cloud cover, to identify the best locations for eclipse viewing.
 - **Airport Finder**: Identifies the closest airports to the optimal viewing locations, aiding in logistical planning.
@@ -23,10 +24,6 @@ The 2024 solar eclipse presents a unique opportunity for enthusiasts and researc
 ## Installation
 
 This project is developed on Ubuntu, and the following instructions are tailored for Ubuntu users. To install the required packages, open your terminal and execute the following commands:
-
-```bash
-# Update package lists
-sudo apt update
 
 # Install Python 3 and pip if they are not already installed
 sudo apt install python3 python3-pip
