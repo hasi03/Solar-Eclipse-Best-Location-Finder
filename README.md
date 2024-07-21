@@ -3,7 +3,9 @@
 
 ## Motivation
 
-The 2024 solar eclipse presents a unique opportunity for enthusiasts and researchers alike to witness one of nature's most awe-inspiring events. However, the visibility of the eclipse can be significantly affected by local weather conditions, particularly cloud cover. This project aims to use historical weather data to analyze cloud cover and other relevant weather conditions to identify the best viewing locations along the path of totality. Additionally, the project helps users find the closest airports to these ideal viewing locations, facilitating travel planning for eclipse chasers. This program can be used for other solar eclipses in the future.
+The 2024 solar eclipse presents a unique opportunity for enthusiasts and researchers alike to witness one of nature's most awe-inspiring events. However, the visibility of the eclipse can be significantly affected by local weather conditions, particularly cloud cover. This project aims to use historical weather data to analyze cloud cover and other relevant weather conditions to identify the best viewing locations along the path of totality. Additionally, the project helps users find the closest airports to these ideal viewing locations, facilitating travel planning for eclipse chasers. This program can be used for other solar eclipses in the future. 
+
+In addition to locating the best place, you need to find the best places to travel to in the area. You can automatically get a list of places by running **Local_Spots** library. 
 
 ## Metrics
 The following metrics were used to evaluate the best location.
